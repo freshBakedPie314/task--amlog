@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 1.0f;
         Instance = this;
         if (isMenu) return;
         scoreText.text = score.ToString();
